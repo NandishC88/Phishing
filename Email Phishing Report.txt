@@ -1,0 +1,96 @@
+Phishing Email Analysis Report
+
+Objective:
+Identify and list phishing indicators in a suspicious email sample to improve threat analysis and security awareness.
+
+1. Sample Phishing Email
+
+Subject: Your Microsoft Office 365 account will be suspended — Action Required Immediately
+From: Microsoft Support <support@microsfot-security.com>
+To: user@example.com
+
+Email Body:
+
+text
+Dear Customer,
+
+We detected unusual activity in your Microsoft Office 365 account and have temporarily restricted access for your safety.  
+
+To avoid permanent suspension, please verify your account within 24 hours by clicking the link below:  
+
+Verify Now → https://microsoft-secure-login.com/verify
+
+Failure to verify your account within the time frame may result in permanent account termination.
+
+Thank you for your immediate attention.
+
+Best regards,  
+Microsoft Account Security Team  
+
+
+2. Analysis and Phishing Indicators
+
+Sender Email Address (Spoofing)
+The sender’s address uses "microsfot-security.com" (misspelled), impersonating "microsoft.com".
+
+Attackers often register domains with minor spelling changes to fool users.
+
+The actual domain is not affiliated with Microsoft and uses a suspicious "-security" suffix.​
+
+Email Header Discrepancies
+Fake emails may come from servers with no connection to the real organization (different IP/routing).
+
+SPF/DKIM/DMARC authentication records would likely fail or be missing.
+
+The “Return-Path” and “Reply-To” addresses usually don’t match the official company.​
+
+Suspicious Links
+The visible link claims to go to "microsoft-secure-login.com" (fake).
+
+Hovering the link would show a mismatch from official Microsoft domains.
+
+Phishing links try to trick victims into sharing passwords or personal information on false login pages.​
+
+Urgent and Threatening Language
+Email uses urgency: "Action Required Immediately", "temporarily restricted", "verify your account within 24 hours", "permanent suspension".
+
+Phishing commonly deploys threats or deadlines to create panic and prompt quick, careless action.
+
+Attachments (if present)
+While none in this sample, phishing emails often include malicious attachments (.exe, .zip, or infected documents).
+
+Grammar and Spelling Errors
+The email uses a generically addressed greeting ("Dear Customer") instead of your real name.
+
+Minor language errors and awkward phrasing are present — often a sign of phishing.​
+
+Mismatched URLs
+The link text says Microsoft but the domain is fake ("microsoft-secure-login.com").
+
+Always check URLs carefully and do not trust the visible part—hover to see the real target address.​
+
+3. Summary of Phishing Traits Found
+
+Misspelled sender domain, clearly imitating the real brand.
+
+Absence or failure of official email authentication records upon header inspection.
+
+Mismatched or suspicious website link.
+
+Threatening, urgent language meant to intimidate and force instant action.
+
+Absence of personalized greeting, indicating mass spamming.
+
+Minor grammar and phrasing issues.
+
+No genuine corporate contact or footer information.
+
+4. Recommendations
+
+Always verify the sender’s address and domain.
+
+Use a header analyzer tool to check for signs of email spoofing.
+
+Never click suspicious links or download unexpected attachments.
+
+Be wary of urgent requests and always verify with the company directly using official contact information.
